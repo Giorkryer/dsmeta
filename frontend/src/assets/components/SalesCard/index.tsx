@@ -15,7 +15,7 @@ function SalesCard() {
     return (
         <>
             <div className="dsmeta-card">
-                <h2 className="dsmeta-sales-title">Vendas</h2>
+                <h2 className="dsmeta-sales-title">Chamados</h2>
                 <div>
                     <div className="dsmeta-form-control-container">
                         <DatePicker
@@ -41,10 +41,10 @@ function SalesCard() {
                             <tr>
                                 <th className="show992">ID</th>
                                 <th className="show576">Data</th>
-                                <th>Vendedor</th>
-                                <th className="show992">Visitas</th>
-                                <th className="show992">Vendas</th>
-                                <th>Total</th>
+                                <th>Colaborador</th>
+                                <th className="show992">Descrição</th>
+                                <th className="show992">Setor</th>
+                                <th>Descrição</th>
                                 <th>Notificar</th>
                             </tr>
                         </thead>
