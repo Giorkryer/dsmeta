@@ -3,6 +3,7 @@ package com.devsuperior.dsmeta.entities;
 import java.time.LocalDate;
 
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,15 +11,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_sales")
+@Table(name = "tb_call")
 public class Call {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String sellerName;
-	private Long idTec;
-	private Long idSector;
+	private Integer idTec;
+	private Integer idSector;
 	private String descricao;
 	private LocalDate date;
 	
@@ -58,19 +59,19 @@ public class Call {
 		this.descricao = descricao;
 	}
 
-	public Long getIdTec() {
+	public Integer getIdTec() {
 		return idTec;
 	}
 
-	public void setIdTec(Long idTec) {
+	public void setIdTec(Integer idTec) {
 		this.idTec = idTec;
 	}
 
-	public Long getIdSector() {
+	public Integer getIdSector() {
 		return idSector;
 	}
 
-	public void setIdSector(Long idSector) {
+	public void setIdSector(Integer idSector) {
 		this.idSector = idSector;
 	}
 	
