@@ -20,7 +20,7 @@ function SalesCard() {
                     <div className="dsmeta-form-control-container">
                         <DatePicker
                             selected={minDate}
-                            onChange={(date: Date) => {setMinDate(date)}}
+                            onChange={(date: Date) => { setMinDate(date) }}
                             className="dsmeta-form-control"
                             dateFormat="dd/MM/yyyy"
                         />
@@ -28,11 +28,19 @@ function SalesCard() {
                     <div className="dsmeta-form-control-container">
                         <DatePicker
                             selected={maxDate}
-                            onChange={(date: Date) => {setMaxDate(date)}}
+                            onChange={(date: Date) => { setMaxDate(date) }}
                             className="dsmeta-form-control"
                             dateFormat="dd/MM/yyyy"
                         />
                     </div>
+                    <h3>Descrição</h3>
+                    <form>
+                        <label>
+                           
+                            <input type="text" name="name" />
+                        </label>
+                        <input type="submit" value="Enviar" />
+                    </form>
                 </div>
 
                 <div>
@@ -55,7 +63,7 @@ function SalesCard() {
                                 <td>Anakin</td>
                                 <td className="show992">15</td>
                                 <td className="show992">11</td>
-                                <td>R$ 55300.00</td>
+                                <td>Teste 1</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
                                         <NotificationButton />
@@ -68,7 +76,7 @@ function SalesCard() {
                                 <td>Anakin</td>
                                 <td className="show992">15</td>
                                 <td className="show992">11</td>
-                                <td>R$ 55300.00</td>
+                                <td>Teste 2</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
                                         <NotificationButton />
@@ -81,7 +89,7 @@ function SalesCard() {
                                 <td>Anakin</td>
                                 <td className="show992">15</td>
                                 <td className="show992">11</td>
-                                <td>R$ 55300.00</td>
+                                <td>Teste 3</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
                                         <NotificationButton />
